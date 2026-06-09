@@ -1,17 +1,79 @@
 # AI-Powered Resume Analyzer
 
-## Project Overview
-AI-powered application for resume analysis and job matching.
+AI-Powered Resume Analyzer, a cutting-edge application designed to mimic the expertise of an HR professional. This tool leverages the power of Google Generative AI to analyze resumes, evaluate job compatibility, and offer actionable insights for career enhancement.
 
-## Features
-- Resume Upload
-- Skill Extraction
-- Resume Scoring
-- Job Description Matching
-- Career Suggestions
+## 📋 Project Overview
 
-## Technologies
-- Python
-- Streamlit
-- Google Gemini AI
-- PDF Processing
+The AI-Powered Resume Analyzer serves as a virtual HR assistant, providing:
+
+* Detailed resume evaluation, including strengths and weaknesses.
+* Suggestions for skill improvement and recommended courses.
+* Job-specific resume analysis to measure compatibility and alignment with job descriptions.
+
+Whether you're a job seeker or a recruiter, this tool simplifies resume assessment and improvement.
+
+## 🔑 Features
+
+### 1️⃣ General Resume Analysis
+
+* Summarizes the resume in one line.
+* Highlights existing skill sets.
+* Identifies skill gaps and suggests improvements.
+* Recommends popular courses to enhance the resume.
+* Provides a thorough evaluation of strengths and weaknesses.
+
+### 2️⃣ Resume Matching with Job Description
+
+* Analyzes resume compatibility with a specific job description.
+* Provides a match score in percentage.
+* Highlights missing skills and areas needing improvement.
+* Suggests whether the resume is ready for the job or requires further enhancements.
+
+## 🛠️ Tech Stack
+
+| Component          | Technology                    |
+| ------------------ | ----------------------------- |
+| Frontend           | Streamlit                     |
+| Backend            | Python                        |
+| AI Model           | Google Generative AI (Gemini) |
+| PDF Parsing        | pdfplumber                    |
+| OCR Fallback       | pytesseract                   |
+| Environment Config | .env for API Key Security     |
+
+## 📊 How It Works
+
+### Resume Parsing
+
+* Extracts text from PDF files using pdfplumber.
+* Uses OCR through pytesseract for image-based PDFs.
+
+### AI Analysis
+
+* Utilizes Google Generative AI (Gemini) to summarize and analyze resume content.
+* Matches skills with job descriptions for compatibility scoring.
+
+### Insightful Feedback
+
+* Provides actionable suggestions for skill enhancement.
+* Recommends courses and certifications.
+* Highlights strengths and weaknesses to improve employability.
+
+## 🚀 Installation
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 🙌 Contributing
+
+Welcome contributions to make this tool better!
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with detailed information about your changes.
+
+
+
+Your Name
+
